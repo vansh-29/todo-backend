@@ -90,7 +90,7 @@ module.exports.loginUser = async function loginUser(req,res){
         if(result){
           let uid = user['_id'] //uid
           let token = jwt.sign({payload:uid} , JWT_KEY)
-          res.cookie('login', token, { domain: "https://todo-frontend-kappa-ten.vercel.app" ,secure:true, sameSite: 'None' , maxAge: 24 * 60 * 60 * 1000});
+          res.cookie('login', token, {secure:true, sameSite: 'None' , maxAge: 24 * 60 * 60 * 1000});
           // localStorage.setItem('userId', uid); // Storing user ID in local storage
           const {password , ...others} = user._doc
           return res.json({
