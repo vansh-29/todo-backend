@@ -1,13 +1,13 @@
 // user-vansh74177 , gEd2FhAGW0VwvuZV
 // mongodb+srv://vansh74177:gEd2FhAGW0VwvuZV@cluster0.t9j29.mongodb.net/
-require('dotenv').config();
+
 const cookieParser = require('cookie-parser');
 const express = require('express');
 const app = express();
 const path = require("path");
 var cors = require('cors')
 app.use(cors({
-    origin: 'https://c747-2409-40d0-1332-481c-99e7-c53c-38ae-ac66.ngrok-free.app', // Replace with your frontend URL
+    origin: 'https://vercel.com/vansh-jains-projects-e282141f/todo-frontend/7dSZFMkVLxryrr3R8HwQsbRDEKbx', // Replace with your frontend URL
     methods: 'GET,POST,PUT,DELETE',
     credentials : true
   }));
