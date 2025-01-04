@@ -7,7 +7,7 @@ const app = express();
 const path = require("path");
 var cors = require('cors')
 app.use(cors({
-    origin: 'https://vercel.com/vansh-jains-projects-e282141f/todo-frontend/7dSZFMkVLxryrr3R8HwQsbRDEKbx', // Replace with your frontend URL
+    origin: 'https://todo-frontend-kappa-ten.vercel.app/', // Replace with your frontend URL
     methods: 'GET,POST,PUT,DELETE',
     credentials : true
   }));
