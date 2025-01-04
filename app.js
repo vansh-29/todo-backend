@@ -7,7 +7,7 @@ const app = express();
 const path = require("path");
 var cors = require('cors')
 app.use(cors({
-    origin: '*', // Replace with your frontend URL
+    origin: 'https://c747-2409-40d0-1332-481c-99e7-c53c-38ae-ac66.ngrok-free.app', // Replace with your frontend URL
     methods: 'GET,POST,PUT,DELETE',
     credentials : true
   }));
